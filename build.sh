@@ -9,7 +9,7 @@ opencv-build-flags() {
   local CONTRIB_DIR=$2
 
   cmake -S . -B "$BUILD_DIR" \
-    -DBUILD_SHARED_LIBS=OFF \
+    -DBUILD_SHARED_LIBS=ON \
     -DCMAKE_CXX_STANDARD=11 \
     -DCMAKE_OSX_DEPLOYMENT_TARGET= \
     -DBUILD_JASPER=OFF \
